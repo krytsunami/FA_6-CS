@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+
+    <style>
+   
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+  
+        a:hover {
+            background-color: #eee;
+        }
+
+        a:active {
+            background-color: #ddd;
+        }
+
+        a:focus {
+            outline: 2px solid #333;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+
+        div {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 1px solid #999;
+            display: inline-block;
+        }
+
+
+        #div2 {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+  
+    <a href="#" onclick="changeDivBorder()">Link 1</a>
+    <br>
+    <div id="div1">Div 1</div>
+
+
+    <br>
+    <a href="#" onclick="changeDivBackground()">Link 2</a>
+    <br>
+    <div id="div2">Div 2</div>
+
+    <script>
+        function changeDivBackground() {
+            document.getElementById('div1').style.backgroundColor = 'yellow';
+            document.getElementById('div1').style.color = 'black';
+        }
+
+        function changeDivBorder() {
+            document.getElementById('div2').style.border = '10px dotted green';
+        }
+    </script>
+</body>
+</html>
+
